@@ -8,7 +8,11 @@ A Simple SVG doughnut chart
 
 *1. Get the script*
 -------
+Manual Download:
 https://github.com/JordiCorbilla/jquery.svgDoughnutChart.js/releases/tag/0.1
+
+Via Nuget:
+https://www.nuget.org/packages/jquery.svgDoughnutChart.js/0.1.0
 
 *2. Include the script in your HTML*
 -------
