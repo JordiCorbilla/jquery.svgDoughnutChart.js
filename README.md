@@ -23,7 +23,7 @@ https://www.nuget.org/packages/jquery.svgDoughnutChart.js/0.1.0
 *3. Create the element in the page*
 -------
 ```XML
-<div id="container" class="svgchart"></div>
+<div id="container"></div>
 ```
 
 *4. Initialise the chart*
