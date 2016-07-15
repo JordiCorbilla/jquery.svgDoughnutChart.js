@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Jquery.svgdoughnutchart.js by JordiCorbilla</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Jquery.svgdoughnutchart.js</h1>
+        <p>Simple Javascript doughnut chart that uses SVG</p>
+
+        <p class="view"><a href="https://github.com/JordiCorbilla/jquery.svgDoughnutChart.js">View the Project on GitHub <small>JordiCorbilla/jquery.svgDoughnutChart.js</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/JordiCorbilla/jquery.svgDoughnutChart.js/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/JordiCorbilla/jquery.svgDoughnutChart.js/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/JordiCorbilla/jquery.svgDoughnutChart.js">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="jquerysvgdoughnutchartjs" class="anchor" href="#jquerysvgdoughnutchartjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>jquery.svgDoughnutChart.js</h1>
+
+<p>A Simple SVG doughnut chart</p>
+
+<p><img src="https://cloud.githubusercontent.com/assets/7347994/16887210/8c7988a0-4ad0-11e6-9d2d-73e9f00fdd08.png" alt="chart1">
+<img src="https://cloud.githubusercontent.com/assets/7347994/16887215/93f452c2-4ad0-11e6-9069-53f7c53f0347.png" alt="chart2"></p>
+
+<h2>
+<a id="installation--use" class="anchor" href="#installation--use" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation &amp; Use</h2>
+
+<h2>
+<a id="1-get-the-script" class="anchor" href="#1-get-the-script" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><em>1. Get the script</em>
+</h2>
+
+<p>Manual Download:
+<a href="https://github.com/JordiCorbilla/jquery.svgDoughnutChart.js/releases/tag/0.1">https://github.com/JordiCorbilla/jquery.svgDoughnutChart.js/releases/tag/0.1</a></p>
+
+<p>Via Nuget:
+<a href="https://www.nuget.org/packages/jquery.svgDoughnutChart.js/0.1.0">https://www.nuget.org/packages/jquery.svgDoughnutChart.js/0.1.0</a></p>
+
+<h2>
+<a id="2-include-the-script-in-your-html" class="anchor" href="#2-include-the-script-in-your-html" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><em>2. Include the script in your HTML</em>
+</h2>
+
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>~/Scripts/Custom/jquery.svgDoughnutChart.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+
+<h2>
+<a id="3-create-the-element-in-the-page" class="anchor" href="#3-create-the-element-in-the-page" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><em>3. Create the element in the page</em>
+</h2>
+
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>container<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<h2>
+<a id="4-initialise-the-chart" class="anchor" href="#4-initialise-the-chart" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><em>4. Initialise the chart</em>
+</h2>
+
+<div class="highlight highlight-source-js"><pre>    <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>#container<span class="pl-pds">'</span></span>).<span class="pl-en">doughnutChart</span>({
+        positiveColor<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>red<span class="pl-pds">"</span></span>,
+        negativeColor<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>blue<span class="pl-pds">"</span></span>,
+        backgroundColor<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>white<span class="pl-pds">"</span></span>,
+        percentage<span class="pl-k">:</span> <span class="pl-c1">52</span>,
+        size<span class="pl-k">:</span> <span class="pl-c1">100</span>,
+        doughnutSize<span class="pl-k">:</span> <span class="pl-c1">0.35</span>,
+        innerText<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>52%<span class="pl-pds">"</span></span>,
+        innerTextOffset<span class="pl-k">:</span> <span class="pl-c1">12</span>,
+        Title<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Share of the popular vote<span class="pl-pds">"</span></span>,
+        positiveText<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>52.5% Barack Obama<span class="pl-pds">"</span></span>,
+        negativeText<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>47.5% Others<span class="pl-pds">"</span></span>
+    });</pre></div>
+
+<h2>
+<a id="licence" class="anchor" href="#licence" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Licence</strong>
+</h2>
+
+<pre><code>The MIT License (MIT)
+
+Copyright (c) 2015 Jordi Corbilla
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/JordiCorbilla">JordiCorbilla</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
